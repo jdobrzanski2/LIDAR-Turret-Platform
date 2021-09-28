@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_main_file" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/main_file_p28L.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/Users/Joseph/Desktop/Romalo_project/screen_w_BIOS/main_file.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/main_file_p28L.mak" src="package.bld"/>
+        <srcFile name="package/cfg/main_file_p28L.o28L.dep" src="package/cfg/main_file_p28L.c"/>
+        <srcFile name="package/cfg/main_file_p28L.dep" src="package/cfg/main_file_p28L.cfg"/>
+        <srcFile name="package/cfg/main_file.x28L.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_main_file.tar.dep" src="package/rel/xconfig_main_file.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.C28_large"
+            version="ti.targets.C28_large{1,0,18.1,4"
+            rawVersion="18.1.4"
+            platform="ti.platforms.sim28xx"
+            isa="28"
+            suffix="28L"
+            rootDir="C:/ti_v8/ccsv8/tools/compiler/ti-cgt-c2000_18.1.4.LTS"
+            os="undefined"
+            rts="ti.targets.rts2800">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="large"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="main_file"
+        pname="main_file.p28L"
+        target="ti.targets.C28_large"
+        platform="ti.platforms.tms320x28:TMS320F28027"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/main_file_p28L.cfg"
+        xCfgPrefix="package/cfg/main_file_p28L"
+        cfgScript="C:/Users/Joseph/Desktop/Romalo_project/screen_w_BIOS/main_file.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="main_file"
+        pname="main_file.x28L"
+        target="ti.targets.C28_large"
+        platform="ti.platforms.tms320x28:TMS320F28027"
+        profile="release"
+        xCfgScript="package/cfg/main_file_p28L.cfg"
+        xCfgPrefix="package/cfg/main_file_p28L"
+        cfgScript="C:/Users/Joseph/Desktop/Romalo_project/screen_w_BIOS/main_file.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="main_file.x28L"
+        args=""
+        groupName="main_file.x28L"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_main_file"
+        pname="xconfig_main_file.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>
