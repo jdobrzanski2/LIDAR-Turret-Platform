@@ -21,7 +21,7 @@ C was utilized for programming in this project. The library for communicating wi
 
 ## Content
 Important project files:
-
+```
  Top level of project folder: 
 ├── DeviceInit_18Nov2018.c				# initialization information for C2000 board
 ├── F2802x_GlobalVariableDefs.c			# global variables for various registers for board
